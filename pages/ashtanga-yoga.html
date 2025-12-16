@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Detail | Yog Ka Sagar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@400;600&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-stone-50">
+
+    <nav class="fixed top-0 w-full z-50 glass py-5 px-8 flex justify-between items-center">
+        <div class="text-xl font-black tracking-tighter text-orange-700">YOG KA SAGAR</div>
+        <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-widest">
+            <a href="index.html#home" class="hover:text-orange-600 transition">Home</a>
+            <a href="index.html#services" class="text-orange-600">Services</a>
+            <a href="index.html#contact" class="hover:text-orange-600 transition">Contact</a>
+        </div>
+        <a href="index.html" class="text-sm font-bold border-2 border-orange-700 px-4 py-1 rounded-full text-orange-700 hover:bg-orange-700 hover:text-white transition">Back</a>
+    </nav>
+
+    <section class="relative h-[60vh] flex items-end">
+        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1600" 
+             class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-stone-900/80 to-transparent"></div>
+        
+        <div class="relative z-10 p-10 md:p-20 text-white">
+            <h1 class="text-5xl md:text-7xl font-serif mb-4">Ashtanga Yoga</h1> <p class="text-orange-400 font-bold uppercase tracking-widest">Tradition & Discipline</p>
+        </div>
+    </section>
+
+    <section class="py-20 px-8 max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
+        <div>
+            <h2 class="text-3xl font-serif mb-6 text-stone-800">Transform Your Being</h2>
+            <p class="text-stone-600 leading-relaxed mb-6">
+                Our sessions focus on the union of breath and movement. This specific practice is designed to purify the body and the nervous system, allowing the practitioner to develop deep concentration and physical stamina.
+            </p>
+            <ul class="space-y-4 text-stone-700 font-medium">
+                <li class="flex items-center"><span class="text-orange-600 mr-3">✔</span> Traditional Vedic Methods</li>
+                <li class="flex items-center"><span class="text-orange-600 mr-3">✔</span> Personalized Breathwork (Pranayama)</li>
+                <li class="flex items-center"><span class="text-orange-600 mr-3">✔</span> Mental Clarity and Stress Relief</li>
+            </ul>
+        </div>
+        
+        <div class="bg-white p-10 rounded-[2.5rem] shadow-xl border border-stone-200">
+            <h3 class="text-2xl font-serif mb-6">Class Schedule</h3>
+            <div class="space-y-4">
+                <div class="flex justify-between border-b pb-2">
+                    <span class="text-stone-500">Mon - Wed - Fri</span>
+                    <span class="font-bold">6:00 AM - 7:30 AM</span>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                    <span class="text-stone-500">Duration</span>
+                    <span class="font-bold">90 Minutes</span>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                    <span class="text-stone-500">Intensity</span>
+                    <span class="font-bold text-orange-600">High</span>
+                </div>
+            </div>
+            <button class="w-full mt-10 bg-stone-900 text-white py-4 rounded-2xl font-bold hover:bg-orange-700 transition">
+                Book a Trial Session
+            </button>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center border-t border-stone-200 text-stone-400 text-sm">
+        &copy; 2025 Yog Ka Sagar | Union of Soul
+    </footer>
+
+</body>
+</html>
