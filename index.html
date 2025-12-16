@@ -50,7 +50,15 @@
         .mobile-menu.active {
             transform: translateX(0);
         }
-
+        .logo-container {
+            display: flex ;
+        }
+        .logo-main {
+            border-radius : 50% ; 
+            width : 90% ; 
+            height: auto;
+            
+        }
         /* 3D Carousel Adjustment */
         .servicesSwiper {
             padding-top: 50px;
@@ -74,6 +82,8 @@
             max-width: 100%;
             overflow: hidden; /* Clips the adjacent reviews */
         }
+
+
     </style>
 </head>
 <body class="bg-stone-50 text-stone-900 scroll-smooth">
@@ -114,8 +124,8 @@
         </div>
 
         <div class="relative z-20 text-center text-white space-y-6 px-4">
-            <div class="w-24 h-24 bg-white/20 backdrop-blur-md rounded-full mx-auto flex items-center justify-center border border-white/30">
-                <span class="text-4xl">🕉️</span>
+            <div class="w-24 h-24 logo-container bg-white/20 backdrop-blur-md rounded-full mx-auto flex items-center justify-center border border-white/30">
+                <span class="text-4xl"><img src="./assets/yog-ka-sagar.png" alt="" class="logo-main"></span>
             </div>
             <h1 class="text-6xl md:text-8xl font-serif font-bold">Yog Ka Sagar</h1>
             <p class="text-xl md:text-2xl font-light tracking-[0.3em] uppercase">The Ocean of Harmony</p>
